@@ -23,8 +23,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ProxmoxClientWindow_t {
-    QByteArrayData data[16];
-    char stringdata0[242];
+    QByteArrayData data[19];
+    char stringdata0[317];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -48,7 +48,10 @@ QT_MOC_LITERAL(11, 151, 21), // "on_listButton_clicked"
 QT_MOC_LITERAL(12, 173, 25), // "on_treeView_doubleClicked"
 QT_MOC_LITERAL(13, 199, 11), // "QModelIndex"
 QT_MOC_LITERAL(14, 211, 5), // "index"
-QT_MOC_LITERAL(15, 217, 24) // "on_startVmButton_clicked"
+QT_MOC_LITERAL(15, 217, 24), // "on_startVmButton_clicked"
+QT_MOC_LITERAL(16, 242, 29), // "on_createFolderButton_clicked"
+QT_MOC_LITERAL(17, 272, 40), // "on_vmTreeView_customContextMe..."
+QT_MOC_LITERAL(18, 313, 3) // "pos"
 
     },
     "ProxmoxClientWindow\0handleLoginSuccess\0"
@@ -56,7 +59,10 @@ QT_MOC_LITERAL(15, 217, 24) // "on_startVmButton_clicked"
     "QVector<Vm>\0vms\0handleActionSuccess\0"
     "message\0on_loginButton_clicked\0"
     "on_listButton_clicked\0on_treeView_doubleClicked\0"
-    "QModelIndex\0index\0on_startVmButton_clicked"
+    "QModelIndex\0index\0on_startVmButton_clicked\0"
+    "on_createFolderButton_clicked\0"
+    "on_vmTreeView_customContextMenuRequested\0"
+    "pos"
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +72,7 @@ static const uint qt_meta_data_ProxmoxClientWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -74,14 +80,16 @@ static const uint qt_meta_data_ProxmoxClientWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   54,    2, 0x08 /* Private */,
-       3,    1,   55,    2, 0x08 /* Private */,
-       5,    1,   58,    2, 0x08 /* Private */,
-       8,    1,   61,    2, 0x08 /* Private */,
-      10,    0,   64,    2, 0x08 /* Private */,
-      11,    0,   65,    2, 0x08 /* Private */,
-      12,    1,   66,    2, 0x08 /* Private */,
-      15,    0,   69,    2, 0x08 /* Private */,
+       1,    0,   64,    2, 0x08 /* Private */,
+       3,    1,   65,    2, 0x08 /* Private */,
+       5,    1,   68,    2, 0x08 /* Private */,
+       8,    1,   71,    2, 0x08 /* Private */,
+      10,    0,   74,    2, 0x08 /* Private */,
+      11,    0,   75,    2, 0x08 /* Private */,
+      12,    1,   76,    2, 0x08 /* Private */,
+      15,    0,   79,    2, 0x08 /* Private */,
+      16,    0,   80,    2, 0x08 /* Private */,
+      17,    1,   81,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -92,6 +100,8 @@ static const uint qt_meta_data_ProxmoxClientWindow[] = {
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 13,   14,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QPoint,   18,
 
        0        // eod
 };
@@ -110,6 +120,8 @@ void ProxmoxClientWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         case 5: _t->on_listButton_clicked(); break;
         case 6: _t->on_treeView_doubleClicked((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
         case 7: _t->on_startVmButton_clicked(); break;
+        case 8: _t->on_createFolderButton_clicked(); break;
+        case 9: _t->on_vmTreeView_customContextMenuRequested((*reinterpret_cast< const QPoint(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -155,13 +167,13 @@ int ProxmoxClientWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 10;
     }
     return _id;
 }
